@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
+import Block from '../components/Block'
 import Header from '../components/header'
 import './index.css'
 
@@ -15,6 +16,9 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
+    <Block>
+        <div>Test</div>
+    </Block>
     <div
       style={{
         margin: '0 auto',
