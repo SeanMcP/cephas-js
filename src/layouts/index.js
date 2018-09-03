@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import Block from '../components/Block'
 import Header from '../components/header'
 import './index.css'
+import './cephas-layout.css'
 
 const Layout = ({ children, data }) => (
   <div>
@@ -15,7 +16,7 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
     <Block>
         <div>Test</div>
     </Block>
