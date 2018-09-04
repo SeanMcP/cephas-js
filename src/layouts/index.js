@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Story from '../components/Story'
-import Header from '../components/header'
+import Nav from '../components/Nav'
+import Section from '../components/Section'
 import '../styles/cephas-type.css'
 import './cephas-layout.css'
 
@@ -17,9 +17,15 @@ const Layout = ({ children, data }) => (
             ]}
         />
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-        <Story className="content">
+        <Section className="header">
+            <h1>{data.site.siteMetadata.title}</h1>
+            <Nav
+                links={[{ href: '#', text: 'nowhere' }]}
+            />
+        </Section>
+        <Section className="content">
             {children()}
-        </Story>
+        </Section>
     </div>
 )
 

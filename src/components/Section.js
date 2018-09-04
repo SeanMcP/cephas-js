@@ -2,7 +2,7 @@ import React from 'react'
 import Full from '../components/Full'
 import Responder from '../components/Responder'
 
-const Story = (props) => (
+const Section = (props) => (
     <Full className={props.className ? props.className : ''}>
         <Responder>
             {props.children}
@@ -10,4 +10,4 @@ const Story = (props) => (
     </Full>
 )
 
-export default Story
+export default Section
