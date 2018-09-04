@@ -1,6 +1,6 @@
 // hrefs based on Gatsby's /pages directory
 
-const MAINNAV = [
+const NAVLINKS = [
     {
         href: '/',
         text: 'Home'
@@ -11,4 +11,4 @@ const MAINNAV = [
     },
 ]
 
-export default MAINNAV
+export default NAVLINKS

@@ -1,33 +1,13 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import Nav from '../components/Nav'
+import Section from '../components/Section'
+import NAVLINKS from '../constants/navLinks'
 
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </div>
+    <Section className="header">
+        <h1>{siteTitle}</h1>
+        <Nav links={NAVLINKS} />
+    </Section>
 )
 
 export default Header

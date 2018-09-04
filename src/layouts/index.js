@@ -2,9 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Nav from '../components/Nav'
+import Header from '../components/Header'
 import Section from '../components/Section'
-import MAINNAV from '../constants/mainNav'
 import '../styles/cephas-type.css'
 import './cephas-layout.css'
 
@@ -17,11 +16,7 @@ const Layout = ({ children, data }) => (
                 { name: 'keywords', content: 'sample, something' },
             ]}
         />
-        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-        <Section className="header">
-            <h1>{data.site.siteMetadata.title}</h1>
-            <Nav links={MAINNAV} />
-        </Section>
+        <Header siteTitle={data.site.siteMetadata.title} />
         <Section className="content">
             {children()}
         </Section>
