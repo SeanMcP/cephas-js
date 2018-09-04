@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import PropTypes from 'prop-types'
 
 const Nav = (props) => (
-    <nav className={`cephas Nav ${props.className ? props.className : ''}`}>
+    <nav className={`cephas nav ${props.className ? props.className : ''}`}>
         {props.links.map(
             (link, i) => (
                 <Link

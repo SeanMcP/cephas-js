@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import Nav from '../components/Nav'
 import Section from '../components/Section'
+import MAINNAV from '../constants/mainNav'
 import '../styles/cephas-type.css'
 import './cephas-layout.css'
 
@@ -19,9 +20,7 @@ const Layout = ({ children, data }) => (
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <Section className="header">
             <h1>{data.site.siteMetadata.title}</h1>
-            <Nav
-                links={[{ href: '#', text: 'nowhere' }]}
-            />
+            <Nav links={MAINNAV} />
         </Section>
         <Section className="content">
             {children()}
