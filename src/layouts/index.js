@@ -2,29 +2,29 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Block from '../components/Block'
+import Story from '../components/Story'
 import Header from '../components/header'
 import '../styles/cephas-type.css'
 import './cephas-layout.css'
 
 const Layout = ({ children, data }) => (
-  <div>
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-    {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-    <Block>
-      {children()}
-    </Block>
-  </div>
+    <div>
+        <Helmet
+            title={data.site.siteMetadata.title}
+            meta={[
+                { name: 'description', content: 'Sample' },
+                { name: 'keywords', content: 'sample, something' },
+            ]}
+        />
+        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+        <Story className="content">
+            {children()}
+        </Story>
+    </div>
 )
 
 Layout.propTypes = {
-  children: PropTypes.func,
+    children: PropTypes.func,
 }
 
 export default Layout
