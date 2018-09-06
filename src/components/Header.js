@@ -3,8 +3,11 @@ import Nav from '../components/Nav'
 import Section from '../components/Section'
 import NAVLINKS from '../constants/navLinks'
 
-const Header = ({ siteTitle }) => (
-    <Section className="header">
+const Header = ({ background, siteTitle }) => (
+    <Section
+        background={background ? background : null}
+        className="header"
+    >
         <h1>{siteTitle}</h1>
         <Nav links={NAVLINKS} />
     </Section>

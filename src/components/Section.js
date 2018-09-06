@@ -2,10 +2,13 @@ import React from 'react'
 import Full from '../components/Full'
 import Responder from '../components/Responder'
 
-const Section = (props) => (
-    <Full className={props.className ? props.className : ''}>
+const Section = ({ background, children, className }) => (
+    <Full
+        background={background ? background : null}
+        className={className ? className : ''}
+    >
         <Responder>
-            {props.children}
+            {children}
         </Responder>
     </Full>
 )

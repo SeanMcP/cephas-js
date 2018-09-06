@@ -1,8 +1,11 @@
 import React from 'react'
 
-const Full = (props) => (
-    <section className={`cephas full ${props.className ? props.className : ''}`}>
-        {props.children}
+const Full = ({ background, children, className }) => (
+    <section
+        className={`cephas full ${className ? className : ''}`}
+        style={background ? { backgroundColor: background } : null}
+    >
+        {children}
     </section>
 )
 
