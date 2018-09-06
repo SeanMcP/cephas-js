@@ -3,9 +3,9 @@ import Nav from '../components/Nav'
 import Section from '../components/Section'
 import NAVLINKS from '../constants/navLinks'
 
-const Header = ({ background, siteTitle }) => (
+const Header = ({ backgroundColor, siteTitle }) => (
     <Section
-        background={background ? background : null}
+        backgroundColor={backgroundColor ? backgroundColor : null}
         className="header"
     >
         <h1>{siteTitle}</h1>

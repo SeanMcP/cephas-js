@@ -2,9 +2,9 @@ import React from 'react'
 import Full from '../components/Full'
 import Responder from '../components/Responder'
 
-const Section = ({ background, children, className }) => (
+const Section = ({ backgroundColor, children, className }) => (
     <Full
-        background={background ? background : null}
+        backgroundColor={backgroundColor ? backgroundColor : null}
         className={className ? className : ''}
     >
         <Responder>

@@ -18,7 +18,7 @@ const Layout = ({ children, data }) => (
             ]}
         />
         <Header
-            background="red"
+            backgroundColor="red"
             siteTitle={data.site.siteMetadata.title}
         />
         <Section className="content">
