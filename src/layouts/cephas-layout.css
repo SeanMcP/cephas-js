@@ -8,12 +8,24 @@
     max-width: 960px;
 }
 
-.cephas.responder > * {
+.cephas.responder > *:first-child {
     margin-top: 0;
+}
+
+.cephas.responder > *:not(:first-child) {
+    margin-left: 1rem;
 }
 
 @media screen and (max-width: 1000px) {
     .cephas.responder {
         margin: 0 1rem;
     }
+}
+
+.cephas article {
+    display: flex;
+}
+
+.cephas article > *:not(:first-child) {
+    margin-left: 1rem
 }
