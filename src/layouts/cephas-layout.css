@@ -7,6 +7,10 @@
     max-width: 960px;
 }
 
+.cephas.responder > * {
+    margin-top: 0;
+}
+
 @media screen and (max-width: 1000px) {
     .cephas.responder {
         margin: 0 1rem;

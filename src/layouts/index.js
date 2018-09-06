@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
 import Section from '../components/Section'
+import '../styles/reset.css'
 import '../styles/cephas-type.css'
 import './cephas-layout.css'
 
@@ -16,7 +17,10 @@ const Layout = ({ children, data }) => (
                 { name: 'keywords', content: 'sample, something' },
             ]}
         />
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header
+            background="red"
+            siteTitle={data.site.siteMetadata.title}
+        />
         <Section className="content">
             {children()}
         </Section>
