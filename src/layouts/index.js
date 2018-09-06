@@ -18,6 +18,7 @@ const Layout = ({ children, data }) => (
             ]}
         />
         <Header
+            alignItems="center"
             backgroundColor="red"
             siteTitle={data.site.siteMetadata.title}
         />

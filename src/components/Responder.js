@@ -1,9 +1,15 @@
 import React from 'react'
 
-const Responder = (props) => (
-    <div className={`cephas responder ${props.className ? props.className : ''}`}>
-        {props.children}
-    </div>
-)
+const Responder = (props) => {
+    const { alignItems, children, className } = props
+    return (
+        <div
+            className={`cephas responder ${className ? className : ''}`}
+            style={{ alignItems }}
+        >
+            {children}
+        </div>
+    )
+}
 
 export default Responder
