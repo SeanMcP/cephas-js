@@ -8,6 +8,7 @@
     "gatsby-cli": "^1.1.58",
     "gatsby-link": "^1.6.46",
     "gatsby-plugin-react-helmet": "^2.0.11",
+    "prop-types": "^15.6.2",
     "react-helmet": "^5.2.0"
   },
   "keywords": [
